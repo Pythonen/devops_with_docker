@@ -4,7 +4,7 @@ EXPOSE 8080
 
 WORKDIR /usr/src/app
 
-COPY ../../material-applications/spring-example-project
+COPY ./spring-example-project/ .
 
 RUN ./mvnw package
 

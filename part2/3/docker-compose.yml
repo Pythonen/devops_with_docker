@@ -1,8 +1,11 @@
 version: '3' 
 
 services:
-  simple-web:
-    image: devopsdockeruh/simple-web-service
-    command: ["server"]
+  backend:
+    build: ./backend/
     ports:
       - 8080:8080
+  frontend:
+    build: ./frontend/
+    ports:
+      - 5000:5000

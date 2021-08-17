@@ -1,0 +1,34 @@
+version: '3' 
+
+services:
+  backend:
+    build: ./backend/
+    environment:
+      REDIS_HOST: cache
+      POSTGRES_HOST: db
+      POSTGRES_USER: possu
+      POSTGRES_PASSWORD: possu123
+      POSTGRES_DATABASE: possu
+
+    ports:
+      - 8080:8080
+    restart: unless-stopped
+
+  frontend:
+    build: ./frontend/
+    ports:
+      - 5000:5000
+
+  cache:
+    image: redis
+    ports:
+      - 6379:6379
+
+  db:
+    image: postgres
+    environment:
+      # These should be read from somewhere else with e.g. POSTGRES_USER: ${POSTGRES_USER} syntax
+      POSTGRES_USER: possu
+      POSTGRES_PASSWORD: possu123
+      POSTGRES_DB: possu
+

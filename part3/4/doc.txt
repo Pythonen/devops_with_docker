@@ -1,0 +1,4 @@
+after        latest    c06d0e2539ad   7 seconds ago        228MB
+before       latest    ab18cbaf261c   About a minute ago   271MB
+
+Why my images were only 200mb? Anyways got it reduced by some.

@@ -1,0 +1,5 @@
+REPOSITORY    TAG       IMAGE ID       CREATED         SIZE
+after_back    latest    922a85ffa8f0   7 seconds ago   447MB
+before_back   latest    021a5986c7dc   43 hours ago    644MB
+
+I was using the golang image instead of ubuntu so it is a bit different size

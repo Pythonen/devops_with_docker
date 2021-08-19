@@ -1,0 +1,3 @@
+Stripped another 10MB from the image by passing couple of flags to the go compiler.
+
+Also used Scratch- image to run the binary :)

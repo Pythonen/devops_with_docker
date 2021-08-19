@@ -1,0 +1,1 @@
+I did this all along from starting i.e. I used straight the node and golang images as I was used to. However I noticed that the golang image for example is waay bigger than the ubuntu:18.04. Why? Even the alpine version of golang image is way bigger than ubuntu.

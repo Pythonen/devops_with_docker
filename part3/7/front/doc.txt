@@ -1,0 +1,2 @@
+For this image I didn't have optimization tricks in my sleeves and thus focused on the security side; Node-alpine image has this 
+user predefined called node (:D). I gave it permisions to run the application but nothing more. And then of course changed to that user.
